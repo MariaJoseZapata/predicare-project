@@ -1,8 +1,10 @@
 # PrediCare project
 
-In this repository you will find....
+In this repository you will find the notebooks used in the project 'PrediCare: AI for breast cancer diagnosis'. 
 
-# Environment setup
+
+
+## Environment setup
 
 We have to install hdf5:
 
@@ -37,3 +39,7 @@ If you are working on Windows type the following commands in the PowerShell:
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 ```
+
+If you encounter problems installing the 'segmentation_models' package, open the 'keras.py' file linked in the error and type the following:
+````
+``
