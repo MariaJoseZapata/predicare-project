@@ -1,45 +1,37 @@
-# PrediCare project
 
-In this repository you will find the notebooks used in the project 'PrediCare: AI for breast cancer diagnosis'. 
+# PrediCare Project - AI Breast Cancer Diagnosis
+Welcome to the PrediCare project, the culmination of a 3-month data science bootcamp at Spiced Academy/neue Fische GmbH. The dedicated effort over a four-week duration has resulted in a project focused on advancing AI breast cancer diagnosis with ultrasound images through image recognition.
 
+## Project Components:
+- predicare_part_1.ipynb
+- predicare_part_2.ipynb
+- predicare_functions.py
+- predicare_presentation.pdf
 
+Both notebooks, `predicare_part_1.ipynb` and `predicare_part_2.ipynb`, contain the code detailing the comprehensive main process of our project. The `predicare_functions.py` file holds essential functions for analysis, requiring importation at the beginning of the notebooks.
+
+### predicare_part_1.ipynb:
+This notebook adopts a structured approach, commencing with an exploration of the dataset's structure and composition. A baseline model is then established using the raw dataset as a performance benchmark. Subsequent steps involve cleaning and augmentation to address imbalances within the dataset.
+
+### predicare_part_2.ipynb:
+The segmentation phase leverages the U-Net CNN architecture, incorporating both processed and original images. U-Net training utilizes ground truth masks, highlighting specific regions of interest. The image classification section employs transfer learning with ResNet50.
+
+The conclusive outcomes and insights are presented in the predicare_presentation.pdf file.
 
 ## Environment setup
 
-We have to install hdf5:
+For running the notebooks, the following libraries are needed:
 
-```BASH
- brew install hdf5
- brew install graphviz
-```
-With the system setup like that, we can go and create our environment and install tensorflow
+- NumPy
+- Pandas
+- Seaborn
+- Matplotlib
+- OpenCV
+- Scikit-learn
+- Scikit-image
+- SciPy
+- Tensorflow/Keras
 
-```BASH
-pyenv local 3.9.8
-python -m venv .venv
-source .venv/bin/activate
-```
-If you already have hdf5
-```BASH
-export HDF5_DIR=/opt/homebrew/Cellar/hdf5/1.12.2
-```
-otherwise, if you have just installed hdf5 with brew, then
-```BASH
-export HDF5_DIR=/opt/homebrew/Cellar/hdf5/1.12.2_2
-```
 
-```BASH
-pip install -U pip
-pip install --no-binary=h5py h5py
-pip install -r requirements.txt
-```
-If you are working on Windows type the following commands in the PowerShell:
-
-```sh
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-```
-
-If you encounter problems installing the 'segmentation_models' package, open the 'keras.py' file linked in the error and type the following:
-````
-``
+## Statement
+The success of the PrediCare project is a result of the collaborative efforts of Helene Schönewolf, María José Zapata, and Yen Ramisch. While all team members contributed to the project, the modeling and coding tasks were carried out in equal parts by María José Zapata and Yen Ramisch. 
